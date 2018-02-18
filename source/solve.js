@@ -1,3 +1,3 @@
 'use strict'
 
-const solve = (expression, x) => eval(expression)
+const solve = (expression, x) => new Function('x', 'return ' + expression + ';')(x);
